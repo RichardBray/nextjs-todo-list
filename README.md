@@ -1,3 +1,64 @@
+# Next.js Todo List
+
+A simple, in-memory todo list application built with Next.js and TypeScript. This application allows users to manage their tasks with a clean, responsive interface.
+
+## Features
+
+- Add new tasks to your todo list
+- Mark tasks as complete/incomplete
+- Delete tasks from your list
+- Responsive design that works on both desktop and mobile
+- Data stored in memory (refreshing will reset the todos)
+
+## Technologies Used
+
+- **Next.js** - React framework for building the UI
+- **TypeScript** - For type-safe code
+- **Context API** - For state management
+- **Tailwind CSS** - For styling
+
+## Project Structure
+
+```
+nextjs-todo-list/
+├── app/                     # Next.js App Router directory
+│   ├── components/          # React components
+│   │   ├── TodoApp.tsx      # Main app component wrapper
+│   │   ├── TodoForm.tsx     # Form for adding todos
+│   │   ├── TodoItem.tsx     # Individual todo item
+│   │   └── TodoList.tsx     # List of todos
+│   ├── contexts/            # React contexts
+│   │   └── TodoContext.tsx  # Todo state management
+│   ├── types/               # TypeScript types
+│   │   └── todo.ts          # Todo interfaces
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Main page component
+├── public/                  # Static assets
+└── package.json             # Project dependencies
+```
+
+## How to Run
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Coding Standards
+
+This project follows these coding standards:
+- Function declarations instead of function expressions
+- Boolean variables prefixed with verbs (is, has, can)
+- Short and focused functions (< 20 lines)
+- Single level of abstraction per function
+- TypeScript interfaces over types
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
